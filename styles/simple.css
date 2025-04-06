@@ -123,33 +123,40 @@ header {
   color: var(--text-light);
   margin-bottom: 0;
 }
-
-.nav-link {
-  color: var(--text-color);
-  font-weight: 500;
-  padding: 0.5rem 1rem;
+.navbar-nav .nav-link {
   position: relative;
-  transition: var(--transition);
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-.nav-link:hover {
-  color: var(--accent-color);
-}
-
-.nav-link::after {
+.navbar-nav .nav-link::after {
   content: "";
   position: absolute;
+  bottom: -4px;
+  left: 0;
   width: 0;
   height: 2px;
-  bottom: -2px;
-  left: 50%;
-  background: var(--accent-gradient);
-  transition: var(--transition);
-  transform: translateX(-50%);
+  background: #00bfff;
+  transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
-  width: 70%;
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #00bfff !important;
+  text-shadow: 0 0 5px #00e5ff;
+}
+
+.navbar-nav .nav-link.active {
+  color: #00e5ff !important;
+  text-shadow: 0 0 8px #00e5ff;
+  font-weight: 600;
 }
 
 .btn {
@@ -536,4 +543,62 @@ main {
   display: block;
   text-align: center;
   margin-top: 10px;
+}
+
+/* terms condition */
+.text-gradient {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* services page */
+.custom-card {
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(66, 165, 245, 0.3);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 180px;
+  text-align: justify;
+}
+/* Neon hover effect */
+.custom-card:hover {
+  box-shadow: 0 0 20px #00ffff, 0 0 30px #00bfff, 0 0 40px #1e90ff;
+  transform: translateY(-5px);
+}
+
+/* Optional: for icons inside cards */
+.custom-card i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #00ffff;
+}
+
+/* about us */
+.banner {
+  background: linear-gradient(to right, #001f3f, #00bfff);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 0 0 40px 40px;
+  margin-bottom: 40px;
+}
+.about-section {
+  padding: 40px 20px;
+}
+.about-img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.about-text h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
 }

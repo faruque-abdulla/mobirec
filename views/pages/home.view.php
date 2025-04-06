@@ -1,26 +1,75 @@
-<!-- Hero Banner -->
-<div class="text-white position-relative overflow-hidden" style="height: 450px; background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('/mobirec/images/banner.jpg') center center/cover no-repeat;">
+<!-- Bootstrap Hero Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators mb-0">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
 
-  <!-- Main Content -->
-  <div class="container h-100 position-relative" style="z-index: 1;">
-    <div class="row align-items-center h-100 text-center">
-      <div class="col-md-6">
-        <h1 class="display-5 fw-bold mb-3 text-gradient">Welcome to Mobirec</h1>
-        <p class="lead text-light mb-3">Your one-stop solution for mobile recharge and bill payments.</p>
-        <h2 class="h4 fw-semibold mb-2 text-gradient">Recharge & Bill Payment</h2>
-        <p class="mb-4 text-light">Recharge your mobile, DTH, and data card instantly.</p>
-        <a href="#" class="btn btn-danger btn-lg px-4 py-2 btn-neon">
-          <i class="fas fa-rocket me-2"></i>Get Started
-        </a>
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="d-flex align-items-center" style="height: 450px; background: url('/mobirec/images/slide1.png') center center/cover no-repeat;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-start text-white ms-md-5">
+              <h1 class="display-5 fw-bold text-gradient mb-3">Welcome to Mobirec</h1>
+              <p class="lead mb-4">Your one-stop solution for mobile recharge and utility payments.</p>
+              <a href="#" class="btn btn-danger btn-lg px-4 py-2 btn-neon me-3">
+                <i class="fas fa-rocket me-2"></i>Get Started
+              </a>
+              <a href="#" class="btn btn-outline-light btn-lg px-4 py-2">
+                <i class="fab fa-google-play me-2"></i>Download App
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <div class="p-3 rounded-4 shadow dark-card text-center">
-          <img src="/mobirec/images/pay_illustration.png" alt="Banner Image" class="img-fluid rounded-3 shadow" style="max-height: 300px; object-fit: contain;">
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="d-flex align-items-center" style="height: 450px; background:  url('/mobirec/images/slide2.png') center center/cover no-repeat;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-start text-white ms-md-5">
+              <h1 class="display-5 fw-bold text-gradient mb-3">All Recharge in One App</h1>
+              <p class="lead mb-4">Prepaid, DTH, Postpaid & AEPS services at your fingertips.</p>
+              <a href="#" class="btn btn-danger btn-lg px-4 py-2 btn-neon me-3">
+                <i class="fas fa-bolt me-2"></i>Start Recharging
+              </a>
+              <a href="#" class="btn btn-outline-light btn-lg px-4 py-2">
+                <i class="fas fa-info-circle me-2"></i>Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="d-flex align-items-center" style="height: 450px; background:  url('/mobirec/images/slide3.png') center center/cover no-repeat;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-start text-white ms-md-5">
+              <h1 class="display-5 fw-bold text-gradient mb-3">Trusted by Thousands</h1>
+              <p class="lead mb-4">Join the growing Mobirec network and power your digital transactions.</p>
+              <a href="#" class="btn btn-danger btn-lg px-4 py-2 btn-neon me-3">
+                <i class="fas fa-users me-2"></i>Join Now
+              </a>
+              <a href="#" class="btn btn-outline-light btn-lg px-4 py-2">
+                <i class="fas fa-star me-2"></i>Why Choose Us
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
 
 
