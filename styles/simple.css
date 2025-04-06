@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary-gradient: linear-gradient(135deg, #e63950, #cc3c2b);
+  /* Warmer but toned-down */
+  --secondary-gradient: linear-gradient(135deg, #0f9ebd, #9f6cd6, #d84343);
+  /* Balanced vibrancy */
+  --accent-gradient: linear-gradient(135deg, #339f89, #10416d);
+  /* Slightly deeper blues & greens */
+  --accent-color: #00c8e0;
+  /* Slightly softer neon blue */
+  --text-color: #2e2e2e;
+  /* Dark gray instead of pure black */
+  --text-light: #888888;
+  /* Softer muted gray */
+  --text-white: #696666;
+  --bg-light: #f0f2f5;
+  /* Slightly darker light background */
+  --bg-white: #cec5c5;
+  --neon-shadow: 0 0 5px rgba(0, 200, 224, 0.4),
+    0 0 20px rgba(0, 200, 224, 0.25), 0 0 40px rgba(0, 200, 224, 0.1);
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-light);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a2e, #0f3460);
+  background-size: 400% 400%;
+  animation: bodyGradient 20s ease infinite;
+  color: #fff; /* default text color */
+  min-height: 100vh;
+}
+
+@keyframes bodyGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Header styling */
+header {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(15, 223, 247, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  padding: 15px 0;
+}
+
+.neon-border {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--accent-color);
+  box-shadow: var(--neon-shadow);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.5));
+  animation: pulseLogo 2s infinite ease-in-out;
+}
+
+@keyframes pulseLogo {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 3px rgba(0, 229, 255, 0.3));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.7));
+  }
+}
+
+.company-name {
+  font-weight: 700;
+  margin-bottom: 0;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+}
+
+.company-tagline {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-bottom: 0;
+}
+
+.nav-link {
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background: var(--accent-gradient);
+  transition: var(--transition);
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 70%;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: var(--transition);
+  border: none;
+}
+
+.btn-login {
+  background-color: white;
+  color: var(--text-color);
+  border: 1px solid #e0e0e0;
+}
+
+.btn-login:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
+
+.btn-register {
+  background: var(--primary-gradient);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 75, 43, 0.3);
+}
+
+.btn-register:hover {
+  background: linear-gradient(135deg, #ff5e62, #ff9966);
+  transform: translateY(-2px);
+  color: white;
+  box-shadow: 0 6px 20px rgba(255, 75, 43, 0.4);
+}
+
+/* Main content */
+main {
+  flex-grow: 1;
+  padding: 3rem 0;
+}
+
+/* Hero section styling */
+.btn-neon {
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 rgba(0, 255, 255, 0);
+}
+
+.btn-neon:hover {
+  background-color: #ff004f;
+  box-shadow: 0 0 8px #00f0ff, 0 0 16px #00f0ff, 0 0 32px #00f0ff,
+    0 0 64px #00f0ff;
+  transform: translateY(-2px);
+  animation: neonPulse 1.5s infinite alternate;
+}
+@keyframes neonPulse {
+  from {
+    box-shadow: 0 0 8px #00f0ff;
+  }
+  to {
+    box-shadow: 0 0 16px #00f0ff, 0 0 32px #00f0ff;
+  }
+}
+
+/* benefits section */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px #00f2ff;
+}
+
+.benefit-card {
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px #00f2ff;
+}
+
+/* services section */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px #00f2ff;
+}
+
+.service-card {
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px #00f2ff;
+}
+
+/* pricing plans */
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px #00f2ff;
+}
+
+/* Footer styling */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #00f2ff, #3a8dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.neon-hover:hover {
+  color: #00f2ff !important;
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+
+.social-link {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.social-link:hover {
+  color: #00f2ff;
+}
