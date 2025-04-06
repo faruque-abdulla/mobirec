@@ -19,7 +19,7 @@
         <div class="logo-container">
           <img src="/mobirec/images/logo.png" alt="Mobirec Logo" class="logo-img">
           <div>
-            <h1 class="company-name">Mobirec</h1>
+            <h1 class="company-name text-info">Mobirec</h1>
             <p class="company-tagline">Mobile Recharge & Payments</p>
           </div>
         </div>
@@ -30,15 +30,15 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="index.php?page=home">Home</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="#">Services</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="#">About Us</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="#">Contact</a></li>
           </ul>
 
           <div class="d-flex gap-2 navbar-buttons">
-            <a href="#" class="btn btn-login">Login</a>
-            <a href="#" class="btn btn-register">Register</a>
+            <a href="index.php?page=login" class="btn btn-login">Login</a>
+            <a href="#" class="btn btn-register">Join</a>
           </div>
         </div>
       </nav>

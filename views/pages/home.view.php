@@ -145,74 +145,126 @@
 </section>
 
 
-<!-- Pricing Plans -->
+
+
+<!-- Features Section -->
 <section class="py-5 bg-gradient text-white">
   <div class="container text-center">
-    <h2 class="fw-bold mb-4 text-gradient">Choose Pricing Plan That Suits You</h2>
-    <p class="mb-5 text-light">Register with us and unlock powerful tools & expert-level support.</p>
+    <h2 class="fw-bold mb-3 text-gradient">Best-in-Class Digital Services</h2>
+    <p class="text-secondary mb-5">Mobirec Private Limited brings you a wide range of fast, secure, and reliable services — all in one place.</p>
 
     <div class="row g-4">
-      <!-- Retailer Plan -->
-      <div class="col-md-4">
-        <div class="p-4 rounded-4 glass neon-hover shadow-lg pricing-card h-100">
-          <div class="bg-gradient-primary rounded-top py-3 text-white">
-            <h4 class="mb-0">Retailer</h4>
-          </div>
-          <div class="py-4">
-            <h2 class="text-gradient fw-bold">Free</h2>
-            <p class="text-light mb-3">Lifetime Access</p>
-            <hr class="border-light">
-            <ul class="list-unstyled text-start ps-3 small text-light">
-              <li><i class="fas fa-check-circle text-success me-2"></i> Mobile & DTH Recharge</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> Bill Payment & Utilities</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> FREE Retailer Panel</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> Dedicated Support</li>
-            </ul>
-            <a href="#" class="btn btn-danger w-100 mt-4">Choose Plan</a>
-          </div>
+      <!-- Feature 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="p-4 bg-glass shadow rounded-4 h-100 feature-card text-center">
+          <i class="fas fa-mobile-alt fa-2x text-primary mb-3"></i>
+          <h5 class="fw-semibold">Prepaid Recharge</h5>
+          <p class="text-light">Instant mobile, DTH, and data card top-ups across all major operators.</p>
         </div>
       </div>
 
-      <!-- Distributor Plan -->
-      <div class="col-md-4">
-        <div class="p-4 rounded-4 glass neon-hover shadow-lg pricing-card h-100">
-          <div class="bg-gradient-primary rounded-top py-3 text-white">
-            <h4 class="mb-0">Distributor</h4>
-          </div>
-          <div class="py-4">
-            <h2 class="text-gradient fw-bold">Free</h2>
-            <p class="text-light mb-3">Life Time</p>
-            <hr class="border-light">
-            <ul class="list-unstyled text-start ps-3 small text-light">
-              <li><i class="fas fa-check-circle text-success me-2"></i> FREE Distributor Panel</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> Retailer Manager</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> Balance Transfer</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> Various Reports</li>
-            </ul>
-            <a href="#" class="btn btn-danger w-100 mt-4">Choose Plan</a>
-          </div>
+      <!-- Feature 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="p-4 bg-glass shadow rounded-4 h-100 feature-card text-center">
+          <i class="fas fa-sim-card fa-2x text-success mb-3"></i>
+          <h5 class="fw-semibold">Postpaid Bills</h5>
+          <p class="text-light">Pay mobile postpaid bills instantly with receipts & reminders.</p>
         </div>
       </div>
 
-      <!-- API Plan -->
-      <div class="col-md-4">
-        <div class="p-4 rounded-4 glass neon-hover shadow-lg pricing-card h-100">
-          <div class="bg-gradient-primary rounded-top py-3 text-white">
-            <h4 class="mb-0">Developer API</h4>
-          </div>
-          <div class="py-4">
-            <h2 class="text-gradient fw-bold">Free</h2>
-            <p class="text-light mb-3">One Time Setup Cost</p>
-            <hr class="border-light">
-            <ul class="list-unstyled text-start ps-3 small text-light">
-              <li><i class="fas fa-check-circle text-success me-2"></i> API Panel</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> Various Reports</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> XML, JSON Response</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> Dedicated Support</li>
-            </ul>
-            <a href="#" class="btn btn-danger w-100 mt-4">Choose Plan</a>
-          </div>
+      <!-- Feature 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="p-4 bg-glass shadow rounded-4 h-100 feature-card text-center">
+          <i class="fas fa-tv fa-2x text-danger mb-3"></i>
+          <h5 class="fw-semibold">DTH Recharge</h5>
+          <p class="text-light">Recharge all DTH providers like Tata Sky, Airtel, Videocon etc.</p>
         </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="p-4 bg-glass shadow rounded-4 h-100 feature-card text-center">
+          <i class="fas fa-file-invoice-dollar fa-2x text-warning mb-3"></i>
+          <h5 class="fw-semibold">Utility Payments</h5>
+          <p class="text-light">Electricity, water, broadband and gas bills — all at one place.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Our Process Section -->
+<section class="process-section">
+  <div class="container text-center">
+    <h2 class="section-title">Our Process</h2>
+    <div class="row justify-content-center g-4">
+      <!-- Step 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="process-card">
+          <h3 class="step-num">01</h3>
+          <h5>Discussion For Plans With Clients</h5>
+          <p>A step-by-step plan to generate meaningful discussion and define your goals.</p>
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="process-card">
+          <h3 class="step-num">02</h3>
+          <h5>KYC Agreement</h5>
+          <p>Complete the mandatory KYC agreement to begin with full access and verification.</p>
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="process-card">
+          <h3 class="step-num">03</h3>
+          <h5>Integration</h5>
+          <p>We integrate your panel with our APIs for smooth and fast processing.</p>
+        </div>
+      </div>
+      <!-- Step 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="process-card">
+          <h3 class="step-num">04</h3>
+          <h5>Start Transaction</h5>
+          <p>Once ready, start your transactions and manage everything easily.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Partners Section -->
+<section class="partners-section">
+  <div class="container text-center">
+    <h4 class="section-title">Our <span class="highlight">Partners Network</span></h4>
+
+    <div class="logo-slider">
+      <div class="logo-track">
+        <img src="images/other_logos/airtel.webp" alt="Airtel" class="partner-logo" />
+        <img src="images/other_logos/jio.png" alt="Jio" class="partner-logo" />
+        <img src="images/other_logos/videocon.webp" alt="Videocon" class="partner-logo" />
+        <img src="images/other_logos/tatasky.jpg" alt="Tata Sky" class="partner-logo" />
+        <img src="images/other_logos/paytm.jpg" alt="Paytm" class="partner-logo" />
+        <img src="images/other_logos/euronet.webp" alt="Euronet" class="partner-logo" />
+        <img src="images/other_logos/hdfc.png" alt="HDFC" class="partner-logo" />
+        <img src="images/other_logos/icici.png" alt="ICICI" class="partner-logo" />
+        <img src="images/other_logos/idea.png" alt="Idea" class="partner-logo" />
+        <img src="images/other_logos/cyberplat.jpg" alt="Cyberplat" class="partner-logo" />
+
+        <!-- Duplicate for seamless loop -->
+        <img src="images/other_logos/airtel.webp" alt="Airtel" class="partner-logo" />
+        <img src="images/other_logos/jio.png" alt="Jio" class="partner-logo" />
+        <img src="images/other_logos/videocon.webp" alt="Videocon" class="partner-logo" />
+        <img src="images/other_logos/tatasky.jpg" alt="Tata Sky" class="partner-logo" />
+        <img src="images/other_logos/paytm.jpg" alt="Paytm" class="partner-logo" />
+        <img src="images/other_logos/euronet.webp" alt="Euronet" class="partner-logo" />
+        <img src="images/other_logos/hdfc.png" alt="HDFC" class="partner-logo" />
+        <img src="images/other_logos/icici.png" alt="ICICI" class="partner-logo" />
+        <img src="images/other_logos/idea.png" alt="Idea" class="partner-logo" />
+        <img src="images/other_logos/cyberplat.jpg" alt="Cyberplat" class="partner-logo" />
       </div>
     </div>
   </div>
