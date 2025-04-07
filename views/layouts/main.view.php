@@ -150,20 +150,36 @@
 
     <!-- Footer Bottom -->
     <div class="footer-bottom mt-5 py-3 border-top border-secondary text-center text-light small">
-      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <span>&copy; 2025 Mobirec Private Limited. All Rights Reserved.</span>
-        <img src="/api/placeholder/120/30" alt="Payment Options" class="mt-3 mt-md-0" />
+      <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center">
+        <span>&copy; <?php echo date("Y") ?> Mobirec Private Limited. All Rights Reserved.</span>
+
       </div>
     </div>
   </footer>
 
+  <!-- Cursor Bubble Trail -->
+  <div id="cursor-trail"></div>
 
   <!-- bootstrap  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   <!-- tsParticles CDN -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
 
+  <script>
+    document.addEventListener('mousemove', (e) => {
+      const trail = document.getElementById('cursor-trail');
+      const bubble = document.createElement('div');
+      bubble.className = 'cursor-bubble';
+      bubble.style.left = `${e.clientX}px`;
+      bubble.style.top = `${e.clientY}px`;
 
+      trail.appendChild(bubble);
+
+      setTimeout(() => {
+        bubble.remove();
+      }, 1000); // bubble fade time
+    });
+  </script>
 </body>
 
 </html>
