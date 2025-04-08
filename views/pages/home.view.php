@@ -193,7 +193,7 @@
 <section class="py-5 bg-gradient text-white">
   <div class="container text-center">
     <h2 class="fw-bold mb-3 text-gradient">Best-in-Class Digital Services</h2>
-    <p class="text-secondary mb-5">Mobirec Private Limited brings you a wide range of fast, secure, and reliable services — all in one place.</p>
+    <p class="text-light mb-5">Mobirec Private Limited brings you a wide range of fast, secure, and reliable services — all in one place.</p>
 
     <div class="row g-4">
       <!-- Feature 1 -->
