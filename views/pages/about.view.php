@@ -1,5 +1,5 @@
 <!-- Top Banner -->
-<div class="banner text-center py-5 text-white" style="background: linear-gradient(135deg, #001F3F, #00BFFF); border-radius: 0 0 40px 40px;">
+<div class="banner text-center py-5 text-white" style="background: linear-gradient(135deg, #001F3F,rgb(7, 136, 179)); ">
   <h1 class="display-4 fw-bold">About Us</h1>
   <p class="lead">Get to know who we are and what drives us forward</p>
 </div>

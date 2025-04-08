@@ -19,7 +19,7 @@
         <div class="logo-container d-flex align-items-center gap-3">
           <img src="/mobirec/images/logo.png" alt="Mobirec Logo" class="logo-img" style="height: 50px;">
           <div>
-            <h1 class="company-name text-info m-0">Mobirec</h1>
+            <h1 class="company-name text-info m-0 ">Mobirec</h1>
             <p class="company-tagline m-0 text-light">Mobile Recharge & Payments</p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 <!-- Top Banner -->
-<div class="banner text-center py-5 text-white" style="background: linear-gradient(135deg, #001F3F, #00BFFF); border-radius: 0 0 40px 40px;">
+<div class="banner text-center py-5 text-white" style="background: linear-gradient(135deg, #001F3F,rgb(6, 124, 163)); border-radius: 0 0 40px 40px;">
   <h1 class="display-4 fw-bold">Our Services</h1>
   <p class="lead">Explore the powerful services we offer to grow your business</p>
 </div>
@@ -14,7 +14,6 @@
     <a href="index.php?page=contactus" class="btn btn-primary">Contact Us</a>
   </div>
 
-  <!-- Service Cards -->
   <!-- Service Cards -->
   <div class="row g-4">
     <!-- Prepaid Recharge -->

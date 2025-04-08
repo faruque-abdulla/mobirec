@@ -1,5 +1,5 @@
 <!-- Top Banner -->
-<div class="banner text-center py-5 text-white" style="background: linear-gradient(135deg, #001F3F, #00BFFF); border-radius: 0 0 40px 40px;">
+<div class="banner text-center py-5 text-white" style="background: linear-gradient(135deg, #001F3F,rgb(5, 131, 173)); border-radius: 0 0 40px 40px;">
   <h1 class="display-4 fw-bold">Contact <span class="text-warning">Us</span></h1>
   <p class="lead">We’re here to help you anytime</p>
 </div>
@@ -30,7 +30,7 @@
       <div class="custom-card text-center">
         <i class="fas fa-map-marker-alt fa-2x text-info mb-3"></i>
         <h5>Office Location</h5>
-        <p>Mobirec Pvt Ltd No 1, Kachari Vetatip, Dalgaon Part, Silbori, Assam</p>
+        <p>Mobirec Pvt Ltd, No 1 Kachari Veti top, Dalgaon Part, Silbori, Assam</p>
       </div>
     </div>
   </div>
@@ -41,7 +41,7 @@
 <div class="row align-items-center">
   <!-- Left Illustration -->
   <div class="col-md-6 mb-4 mb-md-0 text-center">
-    <img src="/mobirec/images/contact_boy.png" alt="Delivery Illustration" class="img-fluid" style="max-height: 400px;">
+    <img src="/mobirec/images/contact_illus.jpg" alt="Contact Illustration" class="img-fluid" style="max-height: 400px;border-radius: 20px; object-fit: cover; transition: transform 0.5s;">
   </div>
 
   <!-- Right Form -->
