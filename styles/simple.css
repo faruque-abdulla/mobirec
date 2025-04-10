@@ -88,25 +88,6 @@ body {
   }
 }
 
-/* cursor */
-#cursor-trail {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 9999;
-}
-
-.cursor-bubble {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: rgba(0, 255, 255, 0.4);
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-  animation: bubble-fade 1s ease-out forwards;
-}
-
 @keyframes bubble-fade {
   0% {
     transform: scale(1);
@@ -245,6 +226,87 @@ header {
 main {
   flex-grow: 1;
   padding: 3rem 0;
+}
+
+/* carousel */
+
+.carousel-bg {
+  height: 450px;
+  background: var(--bg-img) center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Mobile override: dark gradient instead of image */
+@media (max-width: 768px) {
+  .carousel-bg {
+    height: auto;
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  }
+}
+
+.carousel-content {
+  color: white;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Button Styles */
+.btn-neon {
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 rgba(0, 255, 255, 0);
+}
+
+.btn-neon:hover {
+  background-color: #ff004f;
+  box-shadow: 0 0 8px #00f0ff, 0 0 16px #00f0ff, 0 0 32px #00f0ff,
+    0 0 64px #00f0ff;
+  transform: translateY(-2px);
+  animation: neonPulse 1.5s infinite alternate;
+}
+
+@keyframes neonPulse {
+  from {
+    box-shadow: 0 0 8px #00f0ff;
+  }
+  to {
+    box-shadow: 0 0 16px #00f0ff, 0 0 32px #00f0ff;
+  }
+}
+
+/* Responsive buttons and text for mobile */
+@media (max-width: 768px) {
+  .carousel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-content h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .carousel-content p {
+    font-size: medium;
+    text-align: center;
+  }
+
+  .carousel-content .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+
+    width: 14em;
+  }
 }
 
 /* Hero section styling */

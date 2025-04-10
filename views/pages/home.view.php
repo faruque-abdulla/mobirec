@@ -7,13 +7,14 @@
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
 
+  <!-- Carousel Inner -->
   <div class="carousel-inner">
     <!-- Slide 1 -->
     <div class="carousel-item active">
-      <div class="d-flex align-items-center border-r" style="height: 450px; background: url('/mobirec/images/slide1.png') center center/cover no-repeat;">
+      <div class="carousel-bg" style="--bg-img: url('/mobirec/images/slide1.png')">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 text-start text-white ms-md-5">
+            <div class="col-md-6 text-start carousel-content ms-md-5">
               <h1 class="display-5 fw-bold text-gradient mb-3">Welcome to Mobirec</h1>
               <p class="lead mb-4">Your one-stop solution for mobile recharge and utility payments.</p>
               <a href="#" class="btn btn-danger btn-lg px-4 py-2 btn-neon me-3">
@@ -30,10 +31,10 @@
 
     <!-- Slide 2 -->
     <div class="carousel-item">
-      <div class="d-flex align-items-center" style="height: 450px; background:  url('/mobirec/images/slide2.png') center center/cover no-repeat;">
+      <div class="carousel-bg" style="--bg-img: url('/mobirec/images/slide2.png')">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 text-start text-white ms-md-5">
+            <div class="col-md-6 text-start carousel-content ms-md-5">
               <h1 class="display-5 fw-bold text-gradient mb-3">All Recharge in One App</h1>
               <p class="lead mb-4">Prepaid, DTH, Postpaid & AEPS services at your fingertips.</p>
               <a href="#" class="btn btn-danger btn-lg px-4 py-2 btn-neon me-3">
@@ -50,10 +51,10 @@
 
     <!-- Slide 3 -->
     <div class="carousel-item">
-      <div class="d-flex align-items-center" style="height: 450px; background:  url('/mobirec/images/slide3.png') center center/cover no-repeat;">
+      <div class="carousel-bg" style="--bg-img: url('/mobirec/images/slide3.png')">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 text-start text-white ms-md-5">
+            <div class="col-md-6 text-start carousel-content ms-md-5">
               <h1 class="display-5 fw-bold text-gradient mb-3">Trusted by Thousands</h1>
               <p class="lead mb-4">Join the growing Mobirec network and power your digital transactions.</p>
               <a href="#" class="btn btn-danger btn-lg px-4 py-2 btn-neon me-3">
@@ -69,6 +70,7 @@
     </div>
   </div>
 </div>
+
 
 <!-- Benefits Section -->
 <section class="py-5 bg-dark text-white">
