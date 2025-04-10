@@ -19,7 +19,7 @@
         <div class="logo-container d-flex align-items-center gap-3">
           <img src="/mobirec/images/logo.png" alt="Mobirec Logo" class="logo-img" style="height: 50px;">
           <div>
-            <h1 class="company-name text-info m-0 ">Mobirec</h1>
+            <h1 class="company-name text-info m-0">Mobirec</h1>
             <p class="company-tagline m-0 text-light">Mobile Recharge & Payments</p>
           </div>
         </div>
@@ -158,28 +158,14 @@
   </footer>
 
   <!-- Cursor Bubble Trail -->
-  <div id="cursor-trail"></div>
+
 
   <!-- bootstrap  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   <!-- tsParticles CDN -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
 
-  <script>
-    document.addEventListener('mousemove', (e) => {
-      const trail = document.getElementById('cursor-trail');
-      const bubble = document.createElement('div');
-      bubble.className = 'cursor-bubble';
-      bubble.style.left = `${e.clientX}px`;
-      bubble.style.top = `${e.clientY}px`;
 
-      trail.appendChild(bubble);
-
-      setTimeout(() => {
-        bubble.remove();
-      }, 1000); // bubble fade time
-    });
-  </script>
 </body>
 
 </html>
